@@ -10,7 +10,7 @@ CREATE DATABASE sampleapi;
 ### Installation
 
 ```sh
-go get https://github.com/3d0c/sample-api
+go get github.com/3d0c/sample-api
 ```
 
 No you should have an `api` binay inside your `$GOPATH/bin/`.
