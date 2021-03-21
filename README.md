@@ -2,7 +2,7 @@
 
 ### Prerequisites
 
-You have ready to use PostgreSQL installed. Now create sample database:
+You have to had ready to use PostgreSQL installed. Now create sample database:
 
 ```sql
 CREATE DATABASE sampleapi;
