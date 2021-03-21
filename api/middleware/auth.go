@@ -17,7 +17,7 @@ func Auth(w http.ResponseWriter, r *http.Request, params httprouter.Params) (int
 	)
 
 	if authHeader = r.Header.Get("Authorization"); len(authHeader) < 8 {
-		return http.StatusBadRequest, errors.New(http.StatusText(http.StatusBadRequest))
+		return http.StatusUnauthorized, errors.New(http.StatusText(http.StatusUnauthorized))
 	}
 
 	tokenString := authHeader[7:len(authHeader)]

@@ -32,15 +32,15 @@ func (f *Flight) Validate() error {
 	if f.Number == "" {
 		return fmt.Errorf("Please provide flight number")
 	}
-	if f.Scheduled.IsZero() {
-		return fmt.Errorf("Please provide flight scheduled time")
-	}
-	if f.Arrival.IsZero() {
-		return fmt.Errorf("Please provide flight arrival time")
-	}
-	if f.Departure.IsZero() {
-		return fmt.Errorf("Please provide flight departure time")
-	}
+	// if f.Scheduled.IsZero() {
+	// 	return fmt.Errorf("Please provide flight scheduled time")
+	// }
+	// if f.Arrival.IsZero() {
+	// 	return fmt.Errorf("Please provide flight arrival time")
+	// }
+	// if f.Departure.IsZero() {
+	// 	return fmt.Errorf("Please provide flight departure time")
+	// }
 	if f.Destination == "" {
 		return fmt.Errorf("Please provide flight destination")
 	}

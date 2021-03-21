@@ -58,6 +58,10 @@ func (u *User) Find() (*User, error) {
 	return &tmp, nil
 }
 
+func (u *User) Delete() error {
+	return db.Delete(&User{}).Error
+}
+
 type JWTToken struct {
 	Token string `json:"token"`
 }
