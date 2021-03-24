@@ -10,15 +10,16 @@ CREATE DATABASE sampleapi;
 ### Installation
 
 ```sh
+go env -w GO111MODULE=auto
 go get github.com/3d0c/sample-api
 ```
 
-No you should have an `api` binay inside your `$GOPATH/bin/`.
+No you should have an `sample-api` binay inside your `$GOPATH/bin/`.
 
 Run it by 
 
 ```sh
-DBUSER=validuser $GOPATH/bin/api
+DBUSER=validuser $GOPATH/bin/sample-api
 ```
 Also there are another available environment variables:
 
